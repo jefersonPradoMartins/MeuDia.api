@@ -1,0 +1,17 @@
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\bin\Debug\net7.0\MeuDia.Services.deps.json
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\bin\Debug\net7.0\MeuDia.Services.dll
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\bin\Debug\net7.0\MeuDia.Services.pdb
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\bin\Debug\net7.0\MeuDia.Domain.dll
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\bin\Debug\net7.0\MeuDia.Infra.dll
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\bin\Debug\net7.0\MeuDia.Domain.pdb
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\bin\Debug\net7.0\MeuDia.Infra.pdb
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\MeuDia.Services.csproj.AssemblyReference.cache
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\MeuDia.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\MeuDia.Services.AssemblyInfoInputs.cache
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\MeuDia.Services.AssemblyInfo.cs
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\MeuDia.Services.csproj.CoreCompileInputs.cache
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\MeuDia.Services.csproj.CopyComplete
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\MeuDia.Services.dll
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\refint\MeuDia.Services.dll
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\MeuDia.Services.pdb
+C:\Users\Jerso peida dinterin\source\repos\MeuDia\MeuDia.Service\obj\Debug\net7.0\ref\MeuDia.Services.dll
