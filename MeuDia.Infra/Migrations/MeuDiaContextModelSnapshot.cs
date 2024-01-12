@@ -38,7 +38,7 @@ namespace MeuDia.Infra.Migrations
 
                     b.ToTable("Color");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Color");
+                    b.HasDiscriminator<string>("Discriminator").IsComplete(false).HasValue("Color");
 
                     b.UseTphMappingStrategy();
                 });
@@ -91,7 +91,7 @@ namespace MeuDia.Infra.Migrations
                     b.ToTable("Task");
                 });
 
-            modelBuilder.Entity("TaskTag", b =>
+            modelBuilder.Entity("MeuDia.Domain.Entities.TaskTag", b =>
                 {
                     b.Property<int>("TagId")
                         .HasColumnType("int");
@@ -144,7 +144,7 @@ namespace MeuDia.Infra.Migrations
                     b.Navigation("Color");
                 });
 
-            modelBuilder.Entity("TaskTag", b =>
+            modelBuilder.Entity("MeuDia.Domain.Entities.TaskTag", b =>
                 {
                     b.HasOne("MeuDia.Domain.Entities.Tag", null)
                         .WithMany()

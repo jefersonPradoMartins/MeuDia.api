@@ -15,9 +15,9 @@ namespace MeuDia.Infra.Mapping
         {
             builder.Property(i => i.TaskId).ValueGeneratedOnAdd();
             builder.HasKey(table => new { table.TaskId });
-            builder.HasMany(t => t.Tags).WithMany(t => t.Tasks)
-                .UsingEntity("TaskTag",
-                l => l.HasOne(typeof(Tag)).WithMany().HasForeignKey("TagId").HasPrincipalKey(nameof(Tag.TagId)),
+            builder.HasMany(t => t.Tags).WithMany(t => t.Tasks).UsingEntity(typeof(TaskTag),
+                l => l.HasOne(typeof(Tag)).WithMany().HasForeignKey("TagId")
+                .HasPrincipalKey(nameof(Tag.TagId)),
                 r => r.HasOne(typeof(Domain.Entities.Task)).WithMany().HasForeignKey("TaskId").HasPrincipalKey(nameof(Domain.Entities.Task.TaskId)),
                 j => j.HasKey("TagId", "TaskId"));
         }

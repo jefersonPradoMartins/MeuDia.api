@@ -23,9 +23,9 @@ namespace MeuDia.Services.Service
             await _repository.CreateAsync(color);
         }
 
-        public System.Threading.Tasks.Task DeleteAsync(int colorId)
+        public async System.Threading.Tasks.Task DeleteAsync(int colorId)
         {
-            throw new NotImplementedException();
+            await _repository.DeleteAsync(colorId);
         }
 
         public async Task<Color> GetByIdAsync(int colorId)
@@ -33,9 +33,9 @@ namespace MeuDia.Services.Service
             return await _repository.GetByIdAsync(colorId);
         }
 
-        public System.Threading.Tasks.Task UpdateAsync(Color taskcolor)
+        public async System.Threading.Tasks.Task UpdateAsync(Color taskcolor)
         {
-            throw new NotImplementedException();
+            await _repository.UpdateAsync(taskcolor);
         }
     }
 }

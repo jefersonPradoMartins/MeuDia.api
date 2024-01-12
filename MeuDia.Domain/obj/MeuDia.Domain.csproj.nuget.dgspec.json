@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Domain\\MeuDia.Domain.csproj": {}
+    "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Domain\\MeuDia.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Domain\\MeuDia.Domain.csproj": {
+    "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Domain\\MeuDia.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Domain\\MeuDia.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Domain\\MeuDia.Domain.csproj",
         "projectName": "MeuDia.Domain",
-        "projectPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Domain\\MeuDia.Domain.csproj",
+        "projectPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Domain\\MeuDia.Domain.csproj",
         "packagesPath": "C:\\Users\\Jerso peida dinterin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Jerso peida dinterin\\AppData\\Roaming\\NuGet\\NuGet.Config",

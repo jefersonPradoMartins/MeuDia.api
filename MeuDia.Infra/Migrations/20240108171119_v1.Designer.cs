@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MeuDia.Infra.Migrations
 {
     [DbContext(typeof(MeuDiaContext))]
-    [Migration("20240108110306_v1")]
+    [Migration("20240108171119_v1")]
     partial class v1
     {
         /// <inheritdoc />
@@ -41,7 +41,7 @@ namespace MeuDia.Infra.Migrations
 
                     b.ToTable("Color");
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Color");
+                    b.HasDiscriminator<string>("Discriminator").IsComplete(false).HasValue("Color");
 
                     b.UseTphMappingStrategy();
                 });
@@ -94,7 +94,7 @@ namespace MeuDia.Infra.Migrations
                     b.ToTable("Task");
                 });
 
-            modelBuilder.Entity("TaskTag", b =>
+            modelBuilder.Entity("MeuDia.Domain.Entities.TaskTag", b =>
                 {
                     b.Property<int>("TagId")
                         .HasColumnType("int");
@@ -147,7 +147,7 @@ namespace MeuDia.Infra.Migrations
                     b.Navigation("Color");
                 });
 
-            modelBuilder.Entity("TaskTag", b =>
+            modelBuilder.Entity("MeuDia.Domain.Entities.TaskTag", b =>
                 {
                     b.HasOne("MeuDia.Domain.Entities.Tag", null)
                         .WithMany()

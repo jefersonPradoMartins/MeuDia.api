@@ -9,10 +9,9 @@ namespace MeuDia.Domain.Entities
         public int ColorId { get; set; }
         [JsonPropertyOrder(-1)]
         public string Discriminator { get; set; }
-        public abstract string Display();
         [JsonIgnore]
         public IList<Tag>? Tags { get; set; }
-
+        public abstract string Display();
     }
 
     // Implementação para RGB

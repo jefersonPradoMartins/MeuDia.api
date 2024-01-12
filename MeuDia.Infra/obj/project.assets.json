@@ -2906,11 +2906,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Infra\\MeuDia.Infra.csproj",
+      "projectUniqueName": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Infra\\MeuDia.Infra.csproj",
       "projectName": "MeuDia.Infra",
-      "projectPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Infra\\MeuDia.Infra.csproj",
+      "projectPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Infra\\MeuDia.Infra.csproj",
       "packagesPath": "C:\\Users\\Jerso peida dinterin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Infra\\obj\\",
+      "outputPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jerso peida dinterin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2927,8 +2927,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Domain\\MeuDia.Domain.csproj": {
-              "projectPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Domain\\MeuDia.Domain.csproj"
+            "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Domain\\MeuDia.Domain.csproj": {
+              "projectPath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Domain\\MeuDia.Domain.csproj"
             }
           }
         }

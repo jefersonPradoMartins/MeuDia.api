@@ -33,9 +33,11 @@ namespace MeuDia.Infra.Repository
             return await _context.Color.FindAsync(colorId);
         }
 
-        public System.Threading.Tasks.Task UpdateAsync(Color taskcolor)
+        public async System.Threading.Tasks.Task UpdateAsync(Color taskcolor)
         {
-            throw new NotImplementedException();
+            _context.Color.Update(taskcolor);
+          await  _context.SaveChangesAsync();
+
         }
     }
 }

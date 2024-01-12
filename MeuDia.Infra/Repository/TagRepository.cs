@@ -43,13 +43,8 @@ namespace MeuDia.Infra.Repository
 
         public async Task<Tag> GetByIdAsync(int tagId)
         {
-            var result = _context.Tag.First(x => x.TagId == tagId);
 
-            if (result != null)
-            {
-                var color = _context.Color.First(x => x.ColorId == result.ColorId);
-                result.Color = color;
-            }
+            var result = _context.Tag.Include(x => x.Color).FirstOrDefault(x => x.TagId == tagId);
 
             return result;
         }

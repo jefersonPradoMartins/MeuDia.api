@@ -16,7 +16,7 @@ namespace MeuDia.Infra.Mapping
             builder.Property(t => t.ColorId).ValueGeneratedOnAdd();
             builder.HasKey(t => t.ColorId);
 
-            builder.HasDiscriminator(t => t.Discriminator).IsComplete(false);
+            builder.HasDiscriminator(t => t.Discriminator);
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FNaQLqA9u8LAdgkY3BR3aME4X9kXTm92O/Bp6s/ymes1qIdO4HuDLehBius77f2azaQB+5q3MD1jyX+Y1QDLkw==",
+  "dgSpecHash": "PmymkpiL8SLRgI8Gnckz64HqPgXADKT6XE2jIHsBtekTclt0iJfxQ416wDb4U4N1WwnRBVKKKyaBSccim8ucgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.Service\\MeuDia.Services.csproj",
+  "projectFilePath": "C:\\Users\\Jerso peida dinterin\\source\\repos\\MeuDia\\MeuDia.api\\MeuDia.Service\\MeuDia.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jerso peida dinterin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Jerso peida dinterin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

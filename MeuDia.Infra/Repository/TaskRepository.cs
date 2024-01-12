@@ -1,7 +1,11 @@
-﻿using MeuDia.Infra.Context;
+﻿using Azure;
+using MeuDia.Domain.Entities;
+using MeuDia.Infra.Context;
 using MeuDia.Infra.Repository.Interface;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,24 +22,31 @@ namespace MeuDia.Infra.Repository
             _context = context;
         }
 
-        public System.Threading.Tasks.Task CreateAsync(Domain.Entities.Task task)
+        public async System.Threading.Tasks.Task CreateAsync(Domain.Entities.Task task)
         {
-            throw new NotImplementedException();
+            await _context.Task.AddAsync(task);
+            _context.SaveChanges();
         }
 
-        public System.Threading.Tasks.Task DeleteAsync(int taskId)
+        public async System.Threading.Tasks.Task DeleteAsync(int taskId)
         {
-            throw new NotImplementedException();
+            var result = await _context.Task.FindAsync(taskId);
+            _context.Task.Remove(result);
+            _context.SaveChanges();
         }
 
-        public Task<Domain.Entities.Task> GetByIdAsync(int taskId)
+        public async Task<Domain.Entities.Task> GetByIdAsync(int taskId)
         {
-            throw new NotImplementedException();
+            var resul1t = _context.Task.Include(x => x.Tags)
+                .ThenInclude(x => x.Color).Where(x => x.TaskId == taskId).First();
+          
+            return resul1t;
         }
 
-        public System.Threading.Tasks.Task UpdateAsync(Domain.Entities.Task task)
+        public async System.Threading.Tasks.Task UpdateAsync(Domain.Entities.Task task)
         {
-            throw new NotImplementedException();
+            var result = _context.Task.Update(task);
+            await _context.SaveChangesAsync();
         }
     }
 }

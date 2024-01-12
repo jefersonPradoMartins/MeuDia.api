@@ -29,6 +29,7 @@ namespace MeuDia.Infra.Context
             modelBuilder.ApplyConfiguration(new ColorMap());
             modelBuilder.ApplyConfiguration(new RGBColorMap());
             modelBuilder.ApplyConfiguration(new HexColorMap());
+            //     modelBuilder.ApplyConfiguration(new TaskTagMap());
 
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -51,6 +52,7 @@ namespace MeuDia.Infra.Context
         public DbSet<Color> Color { get; set; }
         public DbSet<RGBColor> RGBColor { get; set; }
         public DbSet<HexColor> HexColor { get; set; }
+        public DbSet<TaskTag> TaskTag { get; set; }
 
     }
 }
