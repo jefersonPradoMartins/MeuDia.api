@@ -1,13 +1,15 @@
 # MeuDia API REST 
 
+![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+
 ### Descrição do Projeto
 O projeto MeuDia API REST é uma aplicação que foi desenvolvida visando aprimorar minhas habilidades na
-implementação de classes abstratas e no uso de padrões criacionais, especialmente o Fluent Builder Pattern e o 
+implementação de classes abstratas junto de padrões criacionais, especialmente o Fluent Builder Pattern e o 
 Factory Method. Para essa prova de conceito utilizei ORM Entity Framework, e System.Text.Json;
 
 
 ### Aprendizados: 
-- Lidando com a hierarquia no Entity Framework, existem formas diferentes de salvar os dados das classes concretas
+- Lidando com a herança no Entity Framework, existem formas diferentes de salvar os dados das classes concretas
   que implementam a classe abstrata, a **Table-per-concrete-type configuration**  salva cada classe concreta 
   em uma tabela diferente, já a maneira que utilizei nesse projeto  foi **Table-per-hierarchy and discriminator configuration**
   que salva os dados das classes concretas na mesma tabela, onde é necessário adicionar uma propriedade a mais para descriminar
@@ -21,3 +23,12 @@ Factory Method. Para essa prova de conceito utilizei ORM Entity Framework, e Sys
   JSON me retorne um objeto da classe concreta que estou usando. Dessa forma não precisei criar um end-point para cada tipo de classe concreta.
   
   > [Para mais informações](https://code-maze.com/csharp-polymorphic-serialization-and-deserialization/)
+- Em consultas ao banco que precisa retornar informações de uma entidade que possui relacionamento com a entidade abstrata acaba não retornando informação da entidade abstrata, para resolver utilizei include adicionando a relação entre as entidades.
+
+  ```csharp
+  var result = _context.Task.Include(x => x.Tags)
+      .ThenInclude(x => x.Color).Where(x => x.TaskId == taskId).First(); 
+    ```
+   
+### Conclusão
+- É Possível utilziar herança em um projeto usando a blilioteca padrão de JSON do .Net e ORM Entity Framework, porem precisa realizar algumas alterações. 
