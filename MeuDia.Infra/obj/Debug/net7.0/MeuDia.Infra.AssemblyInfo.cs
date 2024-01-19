@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MeuDia.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad288ea14abd477df55e3bbd58f74fb62eddbe8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MeuDia.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MeuDia.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
